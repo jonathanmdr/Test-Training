@@ -1,0 +1,5 @@
+br/com/objective/ex1/builder/MatcherBuilderTest.class
+br/com/objective/ex1/service/ProcessNumbersServiceImplTest.class
+br/com/objective/ex1/matcher/ThreeMatcherImplTest.class
+br/com/objective/ex1/matcher/FiveMatcherImplTest.class
+br/com/objective/ex1/matcher/SevenMatcherImplTest.class
