@@ -13,7 +13,7 @@ public class NumberProcessServiceImplTest {
     private NumberProcessService numberProcessService;
 
     @Before
-    public void setupTest() {
+    public void setup() {
         this.numberProcessService = new NumberProcessServiceImpl(new ExpressionImpl());
     }
 
@@ -30,6 +30,16 @@ public class NumberProcessServiceImplTest {
     @Test
     public void threeOrFiveAndSevenNumbers_evaluateNumbersMultipleOfThreeOrFiveAndSeven_sumNumbersMultipleOfThreeOrFiveAndSeven() {
         Assert.assertEquals(33173, numberProcessService.evaluateNumbersByExpression(THIRD_EXPRESSION, 1, 1000));
+    }
+
+    @Test
+    public void happyNumber_evaluateValidHappyNumber_returningTrue() {
+        Assert.assertTrue("This is not a happy number", numberProcessService.evaluateHappyNumber(7));
+    }
+
+    @Test
+    public void happyNumber_evaluateInvalidHappyNumber_returningFalse() {
+        Assert.assertFalse("This is a happy number", numberProcessService.evaluateHappyNumber(5));
     }
 
 }

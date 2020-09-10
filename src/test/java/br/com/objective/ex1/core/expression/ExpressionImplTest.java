@@ -12,7 +12,7 @@ public class ExpressionImplTest {
     private ExpressionImpl expressions;
 
     @Before
-    public void setupClass() {
+    public void setup() {
         this.expressions = new ExpressionImpl();
     }
 

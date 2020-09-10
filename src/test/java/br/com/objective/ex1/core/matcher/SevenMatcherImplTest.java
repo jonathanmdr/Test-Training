@@ -10,7 +10,7 @@ public class SevenMatcherImplTest {
     private Matcher matcher;
 
     @Before
-    public void setupClass() {
+    public void setup() {
         this.matcher = new SevenMatcherImpl();
     }
 
