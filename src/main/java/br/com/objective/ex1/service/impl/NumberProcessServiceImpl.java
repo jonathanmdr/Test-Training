@@ -1,6 +1,5 @@
 package br.com.objective.ex1.service.impl;
 
-import br.com.objective.ex1.core.expession.impl.ExpressionImpl;
 import br.com.objective.ex1.service.NumberProcessService;
 import br.com.objective.ex1.utils.ConstantsExpression;
 
@@ -9,18 +8,12 @@ import java.util.Set;
 
 public class NumberProcessServiceImpl implements NumberProcessService {
 
-    private final ExpressionImpl expressions;
-
-    public NumberProcessServiceImpl(ExpressionImpl expressions) {
-        this.expressions = expressions;
-    }
-
     @Override
     public int evaluateNumbersByExpression(ConstantsExpression expression, int initialStepValue, int finishStepValue) {
         int sum = 0;
 
         for (int currentNumber = initialStepValue; currentNumber < finishStepValue; currentNumber++) {
-            if (expressions.validateExpression(expression, currentNumber)) {
+            if (expression.validate(currentNumber)) {
                 sum += currentNumber;
             }
         }
@@ -40,11 +33,9 @@ public class NumberProcessServiceImpl implements NumberProcessService {
             return true;
         }
 
-        if (numbersSoFar.contains(next)) {
+        if (!numbersSoFar.add(next)) {
             return false;
         }
-
-        numbersSoFar.add(next);
 
         return isHappy(next, numbersSoFar);
     }
@@ -59,6 +50,17 @@ public class NumberProcessServiceImpl implements NumberProcessService {
         }
 
         return sum;
+    }
+
+    @Override
+    public boolean evaluateCousinNumber(int number) {
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
 }

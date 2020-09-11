@@ -1,8 +1,8 @@
 package br.com.objective.ex1.utils;
 
-import br.com.objective.ex1.core.matcher.impl.FiveMatcherImpl;
-import br.com.objective.ex1.core.matcher.impl.SevenMatcherImpl;
-import br.com.objective.ex1.core.matcher.impl.ThreeMatcherImpl;
+import br.com.objective.ex1.matcher.impl.FiveMatcherImpl;
+import br.com.objective.ex1.matcher.impl.SevenMatcherImpl;
+import br.com.objective.ex1.matcher.impl.ThreeMatcherImpl;
 import org.junit.Assert;
 import org.junit.Test;
 

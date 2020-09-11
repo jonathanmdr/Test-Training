@@ -1,5 +1,6 @@
-/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/builder/MatcherBuilderTest.java
-/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/matcher/FiveMatcherImplTest.java
-/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/service/ProcessNumbersServiceImplTest.java
-/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/matcher/ThreeMatcherImplTest.java
-/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/matcher/SevenMatcherImplTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/core/matcher/FiveMatcherImplTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/service/NumberProcessServiceImplTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/utils/ConstantsMatcherTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/core/expression/ExpressionImplTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/core/matcher/ThreeMatcherImplTest.java
+/home/jonathan.medeiros/Documentos/Courses/Ex1/src/test/java/br/com/objective/ex1/core/matcher/SevenMatcherImplTest.java

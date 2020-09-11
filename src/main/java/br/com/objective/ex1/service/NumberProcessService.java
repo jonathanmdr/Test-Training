@@ -8,4 +8,6 @@ public interface NumberProcessService {
 
     boolean evaluateHappyNumber(int number);
 
+    boolean evaluateCousinNumber(int number);
+
 }

@@ -1,6 +1,5 @@
 package br.com.objective.ex1.service;
 
-import br.com.objective.ex1.core.expession.impl.ExpressionImpl;
 import br.com.objective.ex1.service.impl.NumberProcessServiceImpl;
 import org.junit.Assert;
 import org.junit.Before;
@@ -14,7 +13,7 @@ public class NumberProcessServiceImplTest {
 
     @Before
     public void setup() {
-        this.numberProcessService = new NumberProcessServiceImpl(new ExpressionImpl());
+        this.numberProcessService = new NumberProcessServiceImpl();
     }
 
     @Test
@@ -40,6 +39,16 @@ public class NumberProcessServiceImplTest {
     @Test
     public void happyNumber_evaluateInvalidHappyNumber_returningFalse() {
         Assert.assertFalse("This is a happy number", numberProcessService.evaluateHappyNumber(5));
+    }
+
+    @Test
+    public void cousinNumber_evaluateValidCousinNumber_returningTrue() {
+        Assert.assertTrue("This is not a cousin number", numberProcessService.evaluateCousinNumber(7));
+    }
+
+    @Test
+    public void cousinNumber_evaluateInvalidCousinNumber_returningFalse() {
+        Assert.assertFalse("This is a cousin number", numberProcessService.evaluateCousinNumber(10));
     }
 
 }
