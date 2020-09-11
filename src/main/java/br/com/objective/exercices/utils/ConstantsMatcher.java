@@ -1,9 +1,9 @@
-package br.com.objective.ex1.utils;
+package br.com.objective.exercices.utils;
 
-import br.com.objective.ex1.matcher.Matcher;
-import br.com.objective.ex1.matcher.impl.FiveMatcherImpl;
-import br.com.objective.ex1.matcher.impl.SevenMatcherImpl;
-import br.com.objective.ex1.matcher.impl.ThreeMatcherImpl;
+import br.com.objective.exercices.matcher.Matcher;
+import br.com.objective.exercices.matcher.impl.FiveMatcherImpl;
+import br.com.objective.exercices.matcher.impl.SevenMatcherImpl;
+import br.com.objective.exercices.matcher.impl.ThreeMatcherImpl;
 
 public enum ConstantsMatcher {
 

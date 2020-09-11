@@ -1,8 +1,8 @@
-package br.com.objective.ex1.utils;
+package br.com.objective.exercices.utils;
 
 import java.util.function.Predicate;
 
-import static br.com.objective.ex1.utils.ConstantsMatcher.*;
+import static br.com.objective.exercices.utils.ConstantsMatcher.*;
 
 public enum ConstantsExpression {
 

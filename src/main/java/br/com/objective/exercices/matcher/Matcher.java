@@ -1,4 +1,4 @@
-package br.com.objective.ex1.matcher;
+package br.com.objective.exercices.matcher;
 
 public interface Matcher {
 

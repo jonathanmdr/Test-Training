@@ -1,9 +1,9 @@
-package br.com.objective.ex1.utils;
+package br.com.objective.exercices.utils;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static br.com.objective.ex1.utils.ConstantsExpression.*;
+import static br.com.objective.exercices.utils.ConstantsExpression.*;
 
 public class ConstantExpressionTest {
 

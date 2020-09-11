@@ -1,6 +1,6 @@
-package br.com.objective.ex1.matcher.impl;
+package br.com.objective.exercices.matcher.impl;
 
-import br.com.objective.ex1.matcher.Matcher;
+import br.com.objective.exercices.matcher.Matcher;
 
 public class SevenMatcherImpl implements Matcher {
 

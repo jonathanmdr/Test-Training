@@ -1,6 +1,6 @@
-package br.com.objective.ex1.matcher;
+package br.com.objective.exercices.matcher;
 
-import br.com.objective.ex1.matcher.impl.SevenMatcherImpl;
+import br.com.objective.exercices.matcher.impl.SevenMatcherImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
