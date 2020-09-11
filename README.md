@@ -3,6 +3,9 @@ Automated testing training using Java programming language
 
 O treinamento consistiu na implementação de 3 exercícios com testes automatizados!
 
+## Continuous Integration
+![Java CI with Maven](https://github.com/jonathanmdr/Test-Training/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 ## Exercícios
 
 ### Exercício 1 - Múltiplos de 3 ou 5
