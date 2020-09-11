@@ -7,26 +7,26 @@ import org.junit.Test;
 
 public class SevenMatcherImplTest {
 
-    private Matcher matcher;
+    private Matcher subject;
 
     @Before
     public void setup() {
-        this.matcher = new SevenMatcherImpl();
+        this.subject = new SevenMatcherImpl();
     }
 
     @Test
     public void sevenMatcher_getDivider_returningSeven() {
-        Assert.assertEquals(7, matcher.getDivider());
+        Assert.assertEquals(7, subject.getDivider());
     }
 
     @Test
     public void isDivisorOf_processValidNumber_returningTrue() {
-        Assert.assertTrue("This is not a valid number", matcher.isDivisorOf(7));
+        Assert.assertTrue("This is not a valid number", subject.isDivisorOf(7));
     }
 
     @Test
     public void isDivisorOf_processInvalidNumber_returningFalse() {
-        Assert.assertFalse("This is a valid number", matcher.isDivisorOf(5));
+        Assert.assertFalse("This is a valid number", subject.isDivisorOf(5));
     }
 
 }

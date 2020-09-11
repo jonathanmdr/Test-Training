@@ -7,26 +7,26 @@ import org.junit.Test;
 
 public class FiveMatcherImplTest {
 
-    private Matcher matcher;
+    private Matcher subject;
 
     @Before
     public void setup() {
-        this.matcher = new FiveMatcherImpl();
+        this.subject = new FiveMatcherImpl();
     }
 
     @Test
     public void fiveMatcher_getDivider_returningFive() {
-        Assert.assertEquals(5, matcher.getDivider());
+        Assert.assertEquals(5, subject.getDivider());
     }
 
     @Test
     public void isDivisorOf_processValidNumber_returningTrue() {
-        Assert.assertTrue("This is not a valid number", matcher.isDivisorOf(5));
+        Assert.assertTrue("This is not a valid number", subject.isDivisorOf(5));
     }
 
     @Test
     public void isDivisorOf_processInvalidNumber_returningFalse() {
-        Assert.assertFalse("This is a valid number", matcher.isDivisorOf(7));
+        Assert.assertFalse("This is a valid number", subject.isDivisorOf(7));
     }
 
 }

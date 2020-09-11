@@ -6,21 +6,21 @@ import org.junit.Test;
 
 public class NumberCousinServiceTest {
 
-    private NumberCousinService numberCousinService;
+    private NumberCousinService subject;
 
     @Before
     public void setup() {
-        this.numberCousinService = new NumberCousinService();
+        this.subject = new NumberCousinService();
     }
 
     @Test
     public void cousinNumber_evaluateValidCousinNumber_returningTrue() {
-        Assert.assertTrue("This is not a cousin number", numberCousinService.evaluateCousinNumber(7));
+        Assert.assertTrue("This is not a cousin number", subject.evaluateCousinNumber(7));
     }
 
     @Test
     public void cousinNumber_evaluateInvalidCousinNumber_returningFalse() {
-        Assert.assertFalse("This is a cousin number", numberCousinService.evaluateCousinNumber(10));
+        Assert.assertFalse("This is a cousin number", subject.evaluateCousinNumber(10));
     }
 
 }

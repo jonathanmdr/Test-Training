@@ -5,32 +5,34 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static br.com.objective.exercices.utils.ConstantsExpression.*;
-
 public class WordNumberServiceTest {
 
-    private WordNumberService wordNumberService;
+    private WordNumberService subject;
 
     @Before
     public void setup() {
-        this.wordNumberService = new WordNumberService(new LetterDictionary());
+        this.subject = new WordNumberService(new LetterDictionary());
+    }
+
+    @Test
+    public void evaluateWord_simpleCharacters_sumOfValuesForTheWord() {
+        Assert.assertEquals(1, subject.evaluateWord("a"));
+        Assert.assertEquals(27, subject.evaluateWord("A"));
     }
 
     @Test
     public void evaluateWord_simpleWordWithUpperAndLowerCharacters_sumOfValuesForTheWord() {
-        Assert.assertEquals(1, wordNumberService.evaluateWord("a"));
-        Assert.assertEquals(27, wordNumberService.evaluateWord("A"));
-        Assert.assertEquals(78, wordNumberService.evaluateWord("Hello"));
+        Assert.assertEquals(78, subject.evaluateWord("Hello"));
     }
 
     @Test
     public void evaluateWord_wordWithNumberCharacters_sumOfValuesForTheWord() {
-        Assert.assertEquals(56, wordNumberService.evaluateWord("B2B"));
+        Assert.assertEquals(56, subject.evaluateWord("B2B"));
     }
 
     @Test
     public void evaluateWord_wordWithSpecialCharacters_sumOfValuesForTheWord() {
-        Assert.assertEquals(175, wordNumberService.evaluateWord("@!#$Professional"));
+        Assert.assertEquals(175, subject.evaluateWord("@!#$Professional"));
     }
 
 }
