@@ -17,7 +17,7 @@ public enum ConstantsExpression {
                      && SEVEN_MATCHER.getMatcher().isDivisorOf(value)
     );
 
-    private Predicate<Integer> predicate;
+    private final Predicate<Integer> predicate;
 
     ConstantsExpression(Predicate<Integer> predicate) {
         this.predicate = predicate;

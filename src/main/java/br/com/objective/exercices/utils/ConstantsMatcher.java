@@ -11,7 +11,7 @@ public enum ConstantsMatcher {
     FIVE_MATCHER(new FiveMatcherImpl()),
     SEVEN_MATCHER(new SevenMatcherImpl());
 
-    private Matcher matcher;
+    private final Matcher matcher;
 
     ConstantsMatcher(Matcher matcher) {
         this.matcher = matcher;
