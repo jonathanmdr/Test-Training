@@ -1,5 +1,6 @@
 package br.com.objective.exercices.service;
 
+import br.com.objective.exercices.service.exception.InvalidWordException;
 import br.com.objective.exercices.utils.LetterDictionary;
 import org.junit.Assert;
 import org.junit.Before;
@@ -33,6 +34,11 @@ public class WordNumberServiceTest {
     @Test
     public void evaluateWord_wordWithSpecialCharacters_sumOfValuesForTheWord() {
         Assert.assertEquals(175, subject.evaluateWord("@!#$Professional"));
+    }
+
+    @Test(expected = InvalidWordException.class)
+    public void evaluateWord_wordNull_returningException() {
+        subject.evaluateWord(null);
     }
 
 }
