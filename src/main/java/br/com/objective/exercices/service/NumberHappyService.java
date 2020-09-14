@@ -1,11 +1,17 @@
 package br.com.objective.exercices.service;
 
+import br.com.objective.exercices.service.exception.InvalidNumberException;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class NumberHappyService {
 
     public boolean evaluateHappyNumber(int number) {
+        if (number < 0) {
+            throw new InvalidNumberException("This number cannot be negative");
+        }
+
         return isHappy(number, new HashSet<>());
     }
 
