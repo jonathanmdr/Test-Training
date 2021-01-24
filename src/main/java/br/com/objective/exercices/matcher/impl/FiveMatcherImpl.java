@@ -5,11 +5,6 @@ import br.com.objective.exercices.matcher.Matcher;
 public class FiveMatcherImpl implements Matcher {
 
     @Override
-    public boolean isDivisorOf(int value) {
-        return value % getDivider() == 0;
-    }
-
-    @Override
     public int getDivider() {
         return 5;
     }

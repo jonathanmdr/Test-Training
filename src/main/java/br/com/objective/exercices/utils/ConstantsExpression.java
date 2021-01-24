@@ -7,13 +7,13 @@ import static br.com.objective.exercices.utils.ConstantsMatcher.*;
 public enum ConstantsExpression {
 
     FIRST_EXPRESSION(
-            (value) -> THREE_MATCHER.getMatcher().isDivisorOf(value) || FIVE_MATCHER.getMatcher().isDivisorOf(value)
+            value -> THREE_MATCHER.getMatcher().isDivisorOf(value) || FIVE_MATCHER.getMatcher().isDivisorOf(value)
     ),
     SECOND_EXPRESSION(
-            (value) -> THREE_MATCHER.getMatcher().isDivisorOf(value) && FIVE_MATCHER.getMatcher().isDivisorOf(value)
+            value -> THREE_MATCHER.getMatcher().isDivisorOf(value) && FIVE_MATCHER.getMatcher().isDivisorOf(value)
     ),
     THIRD_EXPRESSION(
-            (value) -> (THREE_MATCHER.getMatcher().isDivisorOf(value) || FIVE_MATCHER.getMatcher().isDivisorOf(value))
+            value -> (THREE_MATCHER.getMatcher().isDivisorOf(value) || FIVE_MATCHER.getMatcher().isDivisorOf(value))
                      && SEVEN_MATCHER.getMatcher().isDivisorOf(value)
     );
 
